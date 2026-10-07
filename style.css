@@ -19,3 +19,16 @@ h1,h2,h3,.card h3,.install-strip h2{font-family:"IBM Plex Sans Thai","Noto Sans 
 h1{font-weight:700}.section-head h2,.card h3{font-weight:600}
 .card p,.lead,footer,.install-strip p{font-weight:400}
 .action,.install,.secondary,.primary{font-weight:600}
+
+/* Mobile: single-column cards with comfortable reading size */
+@media (max-width:700px){
+  .cards{grid-template-columns:1fr!important;gap:16px!important}
+  .card{display:block!important;min-width:0!important;padding:22px 20px!important;border-radius:16px!important}
+  .card h3{font-size:19px!important;line-height:1.45!important;margin-top:18px!important}
+  .card p{font-size:15px!important;line-height:1.75!important;margin-bottom:20px!important}
+  .card-number{font-size:13px!important}
+  .action{width:100%!important;min-height:48px!important;font-size:15px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+  .section-head h2{font-size:19px!important}
+  .section-head span{font-size:12px!important}
+  .lead{font-size:15px!important;line-height:1.7!important}
+}
